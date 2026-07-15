@@ -13,6 +13,6 @@ document.write('<div><br></div>');
 
 let j = 0;
 while(j < 20) {
-    document.write(`<h2> cool thing ${j+1}</h2>`);
+    document.write(`<h2> cool thing ${j}</h2>`);
     j++;
 }
