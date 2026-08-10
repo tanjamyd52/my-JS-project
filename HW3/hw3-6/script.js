@@ -16,7 +16,7 @@
 //              …
 //              other users
 //              –>
-//  за допомогою стилів, побудувати сітку по 2 об’єктах в рядок
+
 let usersList = [
     {
         id: 1,
@@ -248,64 +248,40 @@ let usersList = [
         }
     }
 ]
-let usersList1=[1,2,3,4,5,6,]
-const usersPerGroup = 2;
-document.write (`<table border = "1">`);
-for(let i=0; i<usersList1.length; i +=usersPerGroup) {
-    document.write (`<tr>`);
-    for (let j = i; j<i+usersPerGroup; j++) {
-        document.write("<td>");
-        if (j<usersList1.length){
-            document.write(users[j]);}
-            document.write("</td>");
-        }
-    }
-   document.write("</table)");
-
-    document.write(`<div class=”users-block-grid-container” style="
-    
-        display: grid;
-        grid-template-columns: 30px 30px;
-        gap: 20px 20px;
-        align-items: center;
-        font-family: sans-serif;
-        justify-content: center;                     
-        background-color: hotpink;
-         color: white;"
-         >`);
-    for (let i = 0; i < usersList.length; i++) {
-        document.write(` <div class="grid-user">
-              <div class=”user-block”>
+    document.write(` <div class = "grid-container" style="
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+grid-gap: 20px 20px;
+ background-color: hotpink;
+              color: white;" `);
+    for (const user of usersList) {
+document.write(`<div class="grid-user">
+                              
+                     
+             <div class="user-block"> 
+                                   
                   <h2 class="user-ID">${user.id}.  NAME – ${user.name}. USERNAME - ${user.username}</h2>
-                  <h3 class="user-EMAIL">${user.email}.  PHONE - ${user.phone}</h3>,</div>
+                  <h3 class="user-EMAIL">${user.email}.  PHONE - ${user.phone}</h3>
                                   
-               <div class=”address-block” >
+               <div class="address-block" >
                   <p class="user-address.City">${user.address.city}. City</p>
                      <p class="user-address.Street">${user.address.street}. Street</p>
                      <p class="user-address.Suite">${user.address.suite}. Suite</p>
-                     <p class="user-address.Zipcode">${user.address.zipcode}.Zipcode</p>
-                  </div>`
- + usersList[i] + `</div>`);
-        }
+                     <p class="user-address.Zipcode">${user.address.zipcode}.Zipcode</p> </div> </div>                </div>
+                              
+              
+             </div> `);
 
-            //  <div class="grid-item ">
-            //  <div class=”user-block”>
-              //    <h2 class="user-ID">${user.id}.  NAME – ${user.name}. USERNAME - ${user.username}</h2>
-             //     <h3 class="user-EMAIL">${user.email}.  PHONE - ${user.phone}</h3>,</div>
-                                  
-             //  <div class=”address-block” >
-              //    <p class="user-address.City">${user.address.city}. City</p>
-              //       <p class="user-address.Street">${user.address.street}. Street</p>
-               //      <p class="user-address.Suite">${user.address.suite}. Suite</p>
-                //     <p class="user-address.Zipcode">${user.address.zipcode}.Zipcode</p>
-               //   </div>
-//</div>
+}
+document.write(`</div>`);
 
 
-                // <div class=" "  style="content: ""; display: block; grid-column: 1/-1; height: 10px;";>
-               // </div>
+
+
+
+
         
-document.write ('</div>');
+
 
 
 
