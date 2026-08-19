@@ -248,32 +248,32 @@ let usersList = [
         }
     }
 ]
-    document.write(` <div class = "grid-container" style="
-display: grid;
+for (const user of usersList) {
+document.write (`<div class = "users-box-grid-container" style="display:grid;
 grid-template-columns: repeat(2, 1fr);
-grid-gap: 20px 20px;
- background-color: hotpink;
-              color: white;" `);
-    for (const user of usersList) {
-document.write(`<div class="grid-user">
-                              
-                     
-             <div class="user-block"> 
-                                   
-                  <h2 class="user-ID">${user.id}.  NAME – ${user.name}. USERNAME - ${user.username}</h2>
+gap:20px 20px; background-color: hotpink;color: white;">
+
+           <div class= "user-block">     
+                                            
+                 <h2 class="user-ID">${user.id}.  NAME – ${user.name}. USERNAME - ${user.username}</h2>
                   <h3 class="user-EMAIL">${user.email}.  PHONE - ${user.phone}</h3>
-                                  
+                                 
                <div class="address-block" >
                   <p class="user-address.City">${user.address.city}. City</p>
                      <p class="user-address.Street">${user.address.street}. Street</p>
                      <p class="user-address.Suite">${user.address.suite}. Suite</p>
-                     <p class="user-address.Zipcode">${user.address.zipcode}.Zipcode</p> </div> </div>                </div>
-                              
-              
-             </div> `);
+                     <p class="user-address.Zipcode">${user.address.zipcode}.Zipcode</p> </div> 
+            </div> 
+            </div>`)}
+        //<div class = ""  style = "content:""; display: block; grid-column: 1/-1;
+          //  height: 10px;";></div>
 
-}
-document.write(`</div>`);
+
+//</div>`)}
+
+
+
+
 
 
 
