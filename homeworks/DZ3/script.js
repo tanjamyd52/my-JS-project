@@ -1,22 +1,22 @@
 //За допомогою циклу вивести всю інформацію про користувачів, використовуючи шаблон
-//           <div class=”users-box”>
-//               <div class=”user-block”>
-//                   <h2>ID – NAME – USERNAME </h2>
-//                  <h3>EMAIL – PHONE</h3>
-//                  <div class=”address-block”>
-//                      <p>City – ADDRESS.CITY</p>
-//                     <p>Street – ADDRESS.STREET</p>
-//                      <p>Suite – ADDRESS.SUITE</p>
-//                     <p>Zip code – ADDRESS.ZIPCODE</p>
-//                  </div>
-//              </div>
-//    <!–
-//              …
-//              …
-//              …
-//              other users
-//              –>
-
+//     <div class="users-box">
+//            <div class="user-block">
+//                 <h2>ID - NAME - USERNAME </h2>
+//                 <h3>EMAIL - PHONE</h3>
+//                 <div class="address-block">
+//                     <p>City - ADDRESS.CITY</p>
+//                     <p>Street - ADDRESS.STREET</p>
+//                     <p>Suite - ADDRESS.SUITE</p>
+//                     <p>Zip code - ADDRESS.ZIPCODE</p>
+//               </div>
+//          </div>
+//             <!--
+//             ...
+//             ...
+//             ...
+//             І Так далі
+//             -->
+// Додати стилі, побудувати сітку по 2 об'єктах в рядок
 let usersList = [
     {
         id: 1,
@@ -201,7 +201,7 @@ let usersList = [
             catchPhrase: 'Implemented secondary concept',
             bs: 'e-enable extensible e-tailers'
         }
-        },
+    },
     {
         id: 9,
         name: 'Glenna Reichert',
@@ -223,7 +223,7 @@ let usersList = [
             catchPhrase: 'Switchable contextually-based project',
             bs: 'aggregate real-time technologies'
         }
-        },
+    },
     {
         id: 10,
         name: 'Clementina DuBuque',
@@ -254,7 +254,7 @@ document.write (` <div class = "users-box-grid-container" style="display: grid;
  background-color: hotpink;
 color: white;">`);
 for (const user of usersList){
-document.write (`<div class="grid-user"  >
+    document.write (`<div class="grid-user"  >
     
                 <div class="user-block">
                                 
@@ -270,54 +270,4 @@ document.write (`<div class="grid-user"  >
                   </div>
                        
          </div>`);}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
