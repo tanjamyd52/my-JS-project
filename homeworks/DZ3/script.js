@@ -270,4 +270,5 @@ for (const user of usersList){
                   </div>
                        
          </div>`);}
+document.write(`</div>`);
 

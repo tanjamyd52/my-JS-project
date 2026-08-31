@@ -248,14 +248,16 @@ let usersList = [
         }
     }
 ]
-document.write (` <div class = "users-box-grid-container" style="display: grid;
- grid-template-columns: repeat( 2 ,1fr);
- gap: 20px;  
- background-color: hotpink;
-color: white;">`);
+document.write (` <div class = "users-box-grid-container" //style="display: grid;
+ //grid-template-columns: repeat( 2 ,1fr);
+ //gap: 20px;  
+ //background-color: hotpink;
+//color: white;">`);
 for (const user of usersList){
-document.write (`<div class="grid-user"  >
-    
+document.write (`<div class="grid-user" < class="gap"> 20px</> class="background-color">hotpink</>
+
+< class="color">white</><class=" grid-template-columns">repeat(2 ,1fr)</> < class="display">grid</>;
+       
                 <div class="user-block">
                                 
                  <h2 class="user-ID">${user.id}.NAME – ${user.name}. USERNAME - ${user.username}</h2>
@@ -270,6 +272,7 @@ document.write (`<div class="grid-user"  >
                   </div>
                        
          </div>`);}
+document.write(`/div`);
 
 
 

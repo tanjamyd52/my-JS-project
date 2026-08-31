@@ -14,7 +14,7 @@ squareCilinder(radiusNum, heightNum);
 //#SIdMd0hQ
 // – створити функцію, яка приймає масив та виводить кожен його елемент
 
-function  printArray (array) {
+function foobar1 (array) {
     for (const item of array) {
         console.log(item);
     }
