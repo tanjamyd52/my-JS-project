@@ -26,17 +26,17 @@ const cards = suits.flatMap(suit =>
      ({cardSuit:suit.name, value: value, color: suit.color})));
 console.log(cards);
 //знайти пиковий туз
-console.log(cards.filter(value => {
-    return value.cardSuit === 'spade'&& value.value === 'ace'}));
+console.log(cards.find(card => {
+    return card.cardSuit === 'spades'&& card.value === 'ace'}));
 //знайти усі шістки
-console.log(cards.filter(value => {
-    return value.cardSuit && value.value=== '6'}));
+console.log(cards.filter(card => {
+    return card.cardSuit && card.value=== '6'}));
 //знайти усі червоні картки
-console.log(cards.filter(value => {
-    return value.cardSuit && value.color=== 'red'}));
+console.log(cards.filter(card => {
+    return card.cardSuit && card.color=== 'red'}));
 //знайти усі буби
-console.log(cards.filter(value => {
-    return value.cardSuit  === 'diamond' }));
+console.log(cards.filter(card => {
+    return card.cardSuit  === 'diamonds' }));
 //знайти усі трефи від 9 та більше метод includes
 console.log(cards.filter(card => card.cardSuit ==='clubs'&& ['9','10','ace','jack','queen','king'].includes(card.value)));
 //
