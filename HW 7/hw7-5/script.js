@@ -25,17 +25,17 @@ class Product {
 
 Array.prototype.myForEach = function(callback) {
     for (let i = 0; i < this.length; i++) {
-        callback(this[i], i, this);
+        callback(this[i]);
     }
 };
       arrays.myForEach(item => {
-          console.log(` ${item.name},' ', ${item.price} грн`);
+          console.log(` ${item.name}, ${item.price} грн`);
       });
 
 Array.prototype.myFilter = function(callback) {
     const filteredArray = [];
     for (let i = 0; i < this.length; i++) {
-        if (callback(this[i], i, this)){
+        if (callback(this[i])){
         filteredArray.push(this[i]);
                             }
     }
